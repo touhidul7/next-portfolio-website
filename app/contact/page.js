@@ -53,7 +53,7 @@ export default function page() {
     }
 
     return (
-        <section className="mx-auto max-w-screen-md ">
+        <section className="p-6 ">
             {/* React hot tast------------ */}
             <Toaster position="top-center" reverseOrder={false} />
             <Heading title={"Contact Me"} />
@@ -96,9 +96,6 @@ export default function page() {
                         Send message
                     </button>
                 </form>
-                {/*   <div className="bg-black">
-          <TestimonialSlider />
-        </div> */}
             </div>
         </section>
     );

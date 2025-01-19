@@ -24,8 +24,16 @@ export default function Home() {
 
       {/* Skills */}
       <div className="skills">
-        <Heading title="My Expertise" />
-        <Card/>
+        <Heading title="My Skills" />
+        <div className="grid grid-cols-3 gap-4">
+        <Card title="React JS" description={"The most modern and high-quality Responsive design made at a professional level."}/>
+        <Card title="Next Js" description={"The most modern and high-quality Responsive design made at a professional level."}/>
+        <Card title="Tailwind CSS" description={"The most modern and high-quality Responsive design made at a professional level."}/>
+        <Card title="Lead Generation" description={"The most modern and high-quality Responsive design made at a professional level."}/>
+        <Card title="Social Media Marketing" description={"The most modern and high-quality Responsive design made at a professional level."}/>
+        <Card title="WordPress" description={"The most modern and high-quality Responsive design made at a professional level."}/>
+        </div>
+        
       </div>
     </div>
   );
