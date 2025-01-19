@@ -56,7 +56,7 @@ console.log(info);
       {info.JobTitle}
       </div>
       <div className="devider w-full bg-[#282829] h-[2px] mt-2"></div>
-      <div className="data space-y-4">
+      <div className="data space-y-4 text-left">
         <Iconbox title="Email" icon={<AiOutlineMail size={20} />} link={`mailto:${info.email}`} content={info.email} />
         <Iconbox title="Phone" icon={<FaPhoneAlt size={20} />} link={`tel:${info.phone}`} content={info.phone} />
         <Iconbox title="Github" icon={<FaGithub size={20} />} link="https://github.com/touhidul7" content="touhidul7" />
