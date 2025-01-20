@@ -8,7 +8,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { TbBrandFiverr } from "react-icons/tb";
 import { FaPhoneAlt, FaGithub } from "react-icons/fa";
 
-const Sidebar = () => {
+const Sidebar = ({className}) => {
   const serverapi = "https://mernstackportfoliobackend-teds3zq3.b4a.run/info"; // API URL
   const [info, setInfo] = useState(null); // State for storing API data
   const [loading, setLoading] = useState(true); // State for loading status
@@ -41,7 +41,7 @@ const Sidebar = () => {
 console.log(info);
 
   return (
-    <div className="lg:w-[25%] border-[1px] border-[#282829] p-4 bg-[#1E1E1F] flex flex-col justify-start items-center gap-2 rounded-xl">
+    <div className={`lg:w-[25%] border-[1px] border-[#282829] p-4 bg-[#1E1E1F] flex flex-col justify-start items-center gap-2 rounded-xl ${className}`}>
       <div className="profile-img">
         <Image
           className="rounded-full"

@@ -1,9 +1,13 @@
 import Heading from "./component/Heading";
 import Card from "./component/Card";
+import Sidebar from "./component/Sidebar";
 
 export default function Home() {
   return (
     <div className="p-6">
+      <div className="lg:hidden block mt-4">
+        <Sidebar />
+      </div>
       {/* About Me */}
       <div className="About Me">
         <Heading title="About Me" />

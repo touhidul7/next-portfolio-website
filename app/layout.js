@@ -26,8 +26,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="flex lg:flex-row flex-col gap-10 p-10 min-h-screen lg:w-[90%] m-auto">
-        <Sidebar />
+        <div className="flex lg:flex-row flex-col lg:gap-10 gap-4 lg:p-10 p-4 min-h-screen lg:w-[90%] m-auto">
+        <Sidebar className={"lg:flex hidden"}/>
           <div className="lg:w-[80%] bg-[#1E1E1F] rounded-xl border-[1px] border-[#282829] relative">
             <div className=" w-full ">
               <div className="lg:mb-0 mb-8"><Navbar /> </div>
