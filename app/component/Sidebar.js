@@ -41,7 +41,7 @@ const Sidebar = () => {
 console.log(info);
 
   return (
-    <div className="w-[25%] border-[1px] border-[#282829] p-4 bg-[#1E1E1F] flex flex-col justify-start items-center gap-2 rounded-xl">
+    <div className="lg:w-[25%] border-[1px] border-[#282829] p-4 bg-[#1E1E1F] flex flex-col justify-start items-center gap-2 rounded-xl">
       <div className="profile-img">
         <Image
           className="rounded-full"

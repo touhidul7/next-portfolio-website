@@ -1,7 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import Heading from "../component/Heading";
-import projectimg from "@/public/Images/projectimg/project-1.png";
+import brittolearningimg from "@/public/Images/projectimg/brittolearning.jpg";
+import brittosoftimg from "@/public/Images/projectimg/brittosoft.jpg";
+import brittowalletimg from "@/public/Images/projectimg/brittowallet.jpg";
+import smsimg from "@/public/Images/projectimg/sms.jpg";
+import bistritiimg from "@/public/Images/projectimg/bistriti.jpg";
+import andaazimg from "@/public/Images/projectimg/andaaz.jpg";
 import Link from "next/link";
 
 export default function page() {
@@ -10,42 +15,42 @@ export default function page() {
       <div className="heading">
         <Heading title="projects" />
       </div>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid lg:grid-cols-3 grid-cols-1 gap-4">
         <Projectcard
-          title={"E-Commerce Platform"}
-          technologies={"React, Node.js, MongoDB"}
-          projectlink={"#"}
-          image={projectimg}
+          title={"LMS Platform"}
+          technologies={"WordPress, Tutor LMS, Elementor"}
+          projectlink={"https://brittolearning.com/"}
+          image={brittolearningimg}
         />
         <Projectcard
-          title={"Travel Booking Website"}
-          technologies={"Next.js, Tailwind CSS"}
-          image={projectimg}
-          projectlink={"#"}
+          title={"SMS Platform"}
+          technologies={"PHP, Laravel, MySQL, Bootstrap"}
+          image={smsimg}
+          projectlink={""}
         />
         <Projectcard
-          title={"Social Media Dashboard"}
-          technologies={"React, Redux, Firebase"}
-          image={projectimg}
-          projectlink={"#"}
-        />
-        <Projectcard
-          title={"Blog CMS"}
-          technologies={"WordPress, PHP, MySQL"}
-          image={projectimg}
-          projectlink={"#"}
+          title={"Interior Design Portfolio"}
+          technologies={"React, Next JS, Tailwind CSS"}
+          image={bistritiimg}
+          projectlink={"https://bistriti.vercel.app/"}
         />
         <Projectcard
           title={"Personal Budget App"}
-          technologies={"React Native, Expo, SQLite"}
-          image={projectimg}
-          projectlink={"#"}
+          technologies={"React, Redux,Tailwind CSS"}
+          image={brittowalletimg}
+          projectlink={"https://drive.google.com/file/d/13oE6gWCup-tsJYjJfOK2gWOAEyimC_G3/view?usp=drive_link"}
         />
         <Projectcard
-          title={"LMS Platform"}
-          technologies={"Django, Bootstrap, PostgreSQL"}
-          image={projectimg}
-          projectlink={"#"}
+          title={"Development Company"}
+          technologies={"React , Next JS, Tailwind CSS"}
+          image={brittosoftimg}
+          projectlink={"https://brittosoft.com/"}
+        />
+        <Projectcard
+          title={"E-commerce Website"}
+          technologies={"WordPress, Woocommerce, Elementor"}
+          image={andaazimg}
+          projectlink={"https://andaazbd.com/"}
         />
 </div>
 
@@ -56,7 +61,7 @@ export default function page() {
 function Projectcard({ title, technologies, projectlink, image }) {
   return (
     <div className="border-[1px] border-[#282829] p-4 bg-[#1E1E1F] flex flex-col justify-start items-start gap-4 rounded-xl">
-      <Link href={projectlink}>
+      <Link href={projectlink} target="_blank">
         <Image
           className="rounded w-full"
           width={250}

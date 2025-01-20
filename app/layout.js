@@ -26,11 +26,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="flex gap-10 p-10 min-h-screen lg:w-[90%] m-auto">
+        <div className="flex lg:flex-row flex-col gap-10 p-10 min-h-screen lg:w-[90%] m-auto">
         <Sidebar />
-          <div className="w-[80%] bg-[#1E1E1F] rounded-xl border-[1px] border-[#282829] relative">
+          <div className="lg:w-[80%] bg-[#1E1E1F] rounded-xl border-[1px] border-[#282829] relative">
             <div className=" w-full ">
-              <Navbar /> 
+              <div className="lg:mb-0 mb-8"><Navbar /> </div>
               {children}
             </div>
           </div>

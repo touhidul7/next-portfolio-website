@@ -11,10 +11,10 @@ const Navbar = () => {
             name:"Projects",
             path:"/projects"
         },
-        {
+      /*   {
             name:"Resume",
             path:"/resume"
-        },
+        }, */
         {
             name:"Contact",
             path:"/contact"

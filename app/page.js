@@ -21,9 +21,9 @@ export default function Home() {
       </div>
 
       {/* Skills */}
-     <div className="skills">
+      <div className="skills">
         <Heading title="My Skills" />
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid lg:grid-cols-3 grid-cols-1 gap-4">
           <Card title="WordPress" description={"Design custom, fully functional websites using the most flexible CMS platform."} />
           <Card title="React JS" description={"Build dynamic and highly interactive user interfaces with top-notch performance and scalability."} />
           <Card title="Next JS" description={"Develop modern server-side rendered applications with optimized performance and SEO support."} />
@@ -31,7 +31,7 @@ export default function Home() {
           <Card title="Lead Generation" description={"Generate targeted leads effectively to drive business growth and maximize conversions."} />
           <Card title="Business Marketing" description={"Boost online presence and engagement through result-driven marketing strategies."} />
         </div>
-</div>
+      </div>
 
     </div>
   );
