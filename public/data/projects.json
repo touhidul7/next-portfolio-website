@@ -1,0 +1,38 @@
+[
+    {
+        "title": "LMS Platform",
+        "technologies": "WordPress, Tutor LMS, Elementor",
+        "link": "https://brittolearning.com/",
+        "image": "../Images/projectimg/brittolearning.jpg"
+    },
+    {
+        "title": "SMS Platform",
+        "technologies": "PHP, Laravel, MySQL, Bootstrap",
+        "link": "",
+        "image": "../Images/projectimg/sms.jpg"
+    },
+    {
+        "title": "Interior Design Portfolio",
+        "technologies": "React, Next JS, Tailwind CSS",
+        "link": "https://bistriti.vercel.app/",
+        "image": "../Images/projectimg/bistriti.jpg"
+    },
+    {
+        "title": "Personal Budget App",
+        "technologies": "React, Redux,Tailwind CSS",
+        "link": "https://drive.google.com/file/d/13oE6gWCup-tsJYjJfOK2gWOAEyimC_G3/view?usp=drive_link",
+        "image": "../Images/projectimg/brittowallet.jpg"
+    },
+    {
+        "title": "Development Company",
+        "technologies": "React , Next JS, Tailwind CSS",
+        "link": "https://brittosoft.com/",
+        "image": "../Images/projectimg/brittosoft.jpg"
+    },
+    {
+        "title": "E-commerce Website",
+        "technologies": "WordPress, Woocommerce, Elementor",
+        "link": "https://andaazbd.com/",
+        "image": "../Images/projectimg/andaaz.jpg"
+    }
+]
