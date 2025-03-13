@@ -9,40 +9,40 @@ import { FaPhoneAlt, FaGithub } from "react-icons/fa";
 
 const Sidebar = ({ className }) => {
 
-  const serverapi = "https://mernstackportfoliobackend-teds3zq3.b4a.run/info";
-  const [info, setInfo] = useState(null);
-  const [loading, setLoading] = useState(true);
+  /*   const serverapi = "https://mernstackportfoliobackend-teds3zq3.b4a.run/info";
+    const [info, setInfo] = useState(null);
+    const [loading, setLoading] = useState(true); */
 
   // Fetch API data
-  useEffect(() => {
-    fetch(serverapi)
-      .then((response) => response.json())
-      .then((data) => {
-        setInfo(data[0]);
-        console.log(data);
-        
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-        setLoading(false);
-      });
-  }, []);
+  /*   useEffect(() => {
+      fetch(serverapi)
+        .then((response) => response.json())
+        .then((data) => {
+          setInfo(data[0]);
+          console.log(data);
+          
+          setLoading(false);
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+          setLoading(false);
+        });
+    }, []); */
 
-  if (loading) {
+  /* if (loading) {
     return (<div>Loading....</div>)
   }
 
-   if (!info) {
+  if (!info) {
     return (<div>Error Fetching Data</div>)
-  } 
+  } */
 
 
-  console.log(info);
+  // console.log(info);
 
   return (
     <>
-      {/* <div className={`lg:w-[25%] border-[1px] border-[#282829] p-4 bg-[#1E1E1F] flex flex-col justify-start items-center gap-2 rounded-xl ${className}`}>
+      <div className={`lg:w-[25%] border-[1px] border-[#282829] p-4 bg-[#1E1E1F] flex flex-col justify-start items-center gap-2 rounded-xl ${className}`}>
         <div className="profile-img">
           <Image
             className="rounded-full"
@@ -63,9 +63,9 @@ const Sidebar = ({ className }) => {
           <Iconbox title="Github" icon={<FaGithub size={20} />} link="https://github.com/touhidul7" content="touhidul7" />
           <Iconbox title="Fiverr" icon={<TbBrandFiverr size={20} />} link="https://fiverr.com/mdislam124" content="fiverr.com" />
         </div>
-      </div> */}
+      </div>
 
-      <div className={`lg:w-[25%] border-[1px] border-[#282829] p-4 bg-[#1E1E1F] flex flex-col justify-start items-center gap-2 rounded-xl ${className}`}>
+      {/* <div className={`lg:w-[25%] border-[1px] border-[#282829] p-4 bg-[#1E1E1F] flex flex-col justify-start items-center gap-2 rounded-xl ${className}`}>
         <div className="profile-img">
           <Image
             className="rounded-full"
@@ -86,8 +86,8 @@ const Sidebar = ({ className }) => {
           <Iconbox title="Github" icon={<FaGithub size={20} />} link="https://github.com/touhidul7" content="touhidul7" />
           <Iconbox title="Fiverr" icon={<TbBrandFiverr size={20} />} link="https://fiverr.com/mdislam124" content="fiverr.com" />
         </div>
-      
-      </div>
+
+      </div> */}
     </>
   );
 };
