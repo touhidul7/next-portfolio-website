@@ -5,7 +5,7 @@ import Sidebar from "./component/Sidebar";
 export default function Home() {
   return (
     <div className="p-6">
-      <div className="lg:hidden block mt-4">
+      <div className="lg:hidden md:hidden block mt-4">
         <Sidebar />
       </div>
       {/* About Me */}
@@ -24,10 +24,10 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Skills */}
+      {/* Skills */} 
       <div className="skills">
         <Heading title="My Skills" />
-        <div className="grid lg:grid-cols-3 grid-cols-1 gap-4">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
           <Card title="WordPress" description={"Design custom, fully functional websites using the most flexible CMS platform."} />
           <Card title="React JS" description={"Build dynamic and highly interactive user interfaces with top-notch performance and scalability."} />
           <Card title="Next JS" description={"Develop modern server-side rendered applications with optimized performance and SEO support."} />

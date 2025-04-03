@@ -23,7 +23,7 @@ export default function page() {
       <div className="heading">
         <Heading title="projects" />
       </div>
-      <div className="grid lg:grid-cols-3 grid-cols-1 gap-4">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
          {projects?.map((project, index) => (
           <Projectcard
             key={index}
