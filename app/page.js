@@ -13,7 +13,7 @@ export default function Home() {
         <Heading title="About Me" />
         <div className="description text-justify text-sm">
           Hi, I am Touhidul, a creative Front-End Web Developer and WordPress
-          expert with over 2 years of experience. I specialize in crafting
+          expert with over 3 years of experience. I specialize in crafting
           visually stunning and highly functional websites using HTML, CSS,
           JavaScript, React, Tailwind CSS, and WordPress. During my career, I
           have successfully completed numerous professional projects, including
