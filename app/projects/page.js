@@ -7,6 +7,17 @@ import Link from "next/link";
 
 
 export default function page() {
+
+  /* 
+   {
+        "title": "LMS Platform",
+        "technologies": "WordPress, Tutor LMS, Elementor",
+        "link": "https://brittolearning.com/",
+        "image": "../Images/projectimg/brittolearning.jpg"
+    },
+  
+  
+  */
   return (
     <div className="p-6">
       <div className="heading">

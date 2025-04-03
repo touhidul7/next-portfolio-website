@@ -1,10 +1,5 @@
 [
-    {
-        "title": "LMS Platform",
-        "technologies": "WordPress, Tutor LMS, Elementor",
-        "link": "https://brittolearning.com/",
-        "image": "../Images/projectimg/brittolearning.jpg"
-    },
+   
     {
         "title": "SMS Platform",
         "technologies": "PHP, Laravel, MySQL, Bootstrap",
