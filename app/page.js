@@ -8,6 +8,7 @@ export default function Home() {
   const { info, skills, profileLinks } = useAppData();
   return (
     <div className="p-6">
+      {/*  */}
       <div className="lg:hidden md:hidden block h-auto mt-4">
         <Sidebar className={"flex"} info={info} profileLinks={profileLinks} />
       </div>
