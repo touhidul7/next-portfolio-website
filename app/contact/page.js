@@ -1,10 +1,14 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 "use client";
 import React from "react";
 // import toast, { Toaster } from "react-hot-toast";
 import Swal from "sweetalert2";
 import Heading from "../component/Heading";
 import toast, { Toaster } from "react-hot-toast";
+import { useAppData } from "../context/AppDataContext";
 export default function page() {
+
+    const { profileLinks } = useAppData();
     /*  making contact form dynamic using web3 forms -----------------*/
     async function handleSubmit(event) {
         /* toast */
@@ -13,7 +17,7 @@ export default function page() {
         event.preventDefault();
         const formData = new FormData(event.target);
 
-        formData.append("access_key", "63d92490-b288-426c-b811-46175ad3574a");
+        formData.append("access_key", `${profileLinks?.Web3Key}`);
 
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
