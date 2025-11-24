@@ -41,7 +41,7 @@ const Sidebar = ({ className, info, profileLinks }) => {
             <Iconbox
               title="Whatsapp"
               icon={<FaWhatsapp size={20} />}
-              link={`https://wa.me/${profileLinks?.Whatsapp}`}
+              link={`https://api.whatsapp.com/send?phone=88${profileLinks?.Whatsapp}`}
               content={profileLinks?.Whatsapp}
             />
           )}
